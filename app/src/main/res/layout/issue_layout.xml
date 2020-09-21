@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dp_10"
+    >
+<TextView
+    android:id="@+id/tv_issue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="购买运费如何收取？"
+    android:textColor="#000000"
+    android:drawableLeft="@mipmap/dian"
+    />
+    <TextView
+        android:id="@+id/tv_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sp_15"
+        android:maxLines="2"
+        android:text="单笔订单金额（不含运费）满88元免邮费；不满88元，每单收取10元运费。(港澳台地区需满？"
+        >
+
+</TextView>
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_adress">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:id="@+id/et_naem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:hint="姓名"
+        ></EditText>
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:hint="手机号码"
+        ></EditText>
+
+    <TextView
+        android:id="@+id/txt_adress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center_vertical"
+        android:hint="省份，城市，区县"></TextView>
+
+    <EditText
+        android:id="@+id/et_minute"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center_vertical"
+        android:hint="详细地址，如街道，楼盘号等"></EditText>
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="@dimen/dp_50"
+        >
+        <CheckBox
+            android:id="@+id/radio_manage"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_hook"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:button="@null"
+
+            ></CheckBox>
+        <TextView
+            android:id="@+id/txt_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/radio_manage"
+            android:textColor="#000000"
+
+            android:layout_marginLeft="@dimen/dp_20"
+            android:text="设为默认地址"/>
+
+    </RelativeLayout>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    >
+    <Button
+        android:id="@+id/manage_cancel"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#615F61"
+        android:textColor="#ffffff"
+        android:text="取消"
+        ></Button>
+    <Button
+        android:id="@+id/manage_save"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#F44336"
+        android:textColor="#ffffff"
+        android:text="保存"
+        ></Button>
+</LinearLayout>
+
+
+
+
+</RelativeLayout>
