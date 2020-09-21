@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.image">
+
     <application>
-        <activity android:name=".ImageActivity"></activity>
-        <intent-filter>
-            <action android:name="image"></action>
-            <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
+        <activity android:name=".ImageActivity">
+
+
+            <intent-filter>
+                <action android:name="image" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>
